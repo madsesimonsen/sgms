@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Maskinservice i Bogense | Landbrug, entreprenør, lifte & trucks | Skovgaard Maskinservice</title>
+<meta name="description" content="Skovgaard Maskinservice i Bogense servicerer og reparerer landbrugs-, skov- og entreprenørmaskiner samt have/park, lifte og trucks." />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="theme-color" content="#101310" />
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+<link rel="canonical" href="https://sgms.dk/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="da_DK" />
+<meta property="og:site_name" content="Skovgaard Maskinservice A/S" />
+<meta property="og:title" content="Maskinservice i Bogense | Skovgaard Maskinservice" />
+<meta property="og:description" content="Service og reparation af landbrugs-, skov- og entreprenørmaskiner samt have/park, lifte og trucks." />
+<meta property="og:url" content="https://sgms.dk/" />
+<meta property="og:image" content="https://sgms.dk/assets/hero-workshop.jpg" />
+<meta property="og:image:alt" content="Skovgaard Maskinservice – service og reparation af maskiner" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Maskinservice i Bogense | Skovgaard Maskinservice" />
+<meta name="twitter:description" content="Service og reparation af landbrugs-, skov- og entreprenørmaskiner samt have/park, lifte og trucks." />
+<meta name="twitter:image" content="https://sgms.dk/assets/hero-workshop.jpg" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://sgms.dk/#business",
+  "name": "Skovgaard Maskinservice A/S",
+  "url": "https://sgms.dk/",
+  "logo": "https://sgms.dk/assets/logo.svg",
+  "image": "https://sgms.dk/assets/hero-workshop.jpg",
+  "description": "Service og reparation af landbrugs-, skov- og entreprenørmaskiner samt have- og parkmaskiner, lifte og trucks.",
+  "telephone": "+4575560260",
+  "email": "mail@sgms.dk",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sandholtvej 17",
+    "addressLocality": "Bogense",
+    "postalCode": "5400",
+    "addressCountry": "DK"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Service og reparation",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Service og reparation af landbrugs- og skovmaskiner"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Service og reparation af entreprenørmaskiner"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Service og reparation af have- og parkmaskiner"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Service og reparation af lifte og trucks"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto+Slab:wght@700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f2f0ea;
+  --paper:#f9f7f2;
+  --ink:#121512;
+  --muted:#727771;
+  --line:#d8d5cd;
+  --dark:#101310;
+  --dark-2:#1a1e1a;
+  --accent:#efa30b;
+  --accent-light:#f5bb42;
+  --max:1360px;
+}
+
+*{box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Manrope", sans-serif;
+  line-height:1.55;
+  overflow-x:hidden;
+}
+
+/* Display typography: Roboto Slab is used as a close web-safe alternative to Museo Slab 900. */
+h1, h2, h3, .brand-tile, .story-year{
+  font-family:"Roboto Slab", Georgia, serif;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.wrap{
+  width:min(var(--max), calc(100% - 52px));
+  margin:auto;
+}
+
+/* -------------------------------------------------
+   SCROLL PROGRESS
+-------------------------------------------------- */
+
+.progress{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:3px;
+  z-index:9999;
+  pointer-events:none;
+}
+
+.progress span{
+  display:block;
+  width:0;
+  height:100%;
+  background:var(--accent);
+}
+
+/* -------------------------------------------------
+   NAV
+-------------------------------------------------- */
+
+.nav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1000;
+  color:white;
+  padding:26px 0;
+  transition:.35s ease;
+}
+
+.nav.scrolled{
+  padding:14px 0;
+  background:rgba(16,19,16,.9);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:35px;
+}
+
+.logo{
+  display:inline-flex;
+  align-items:center;
+  flex:none;
+}
+
+.logo img{
+  display:block;
+  width:auto;
+  height:60px;
+  max-width:245px;
+  object-fit:contain;
+}
+
+.menu{
+  display:flex;
+  align-items:center;
+  gap:31px;
+  font-size:13px;
+  color:#d2d6d2;
+}
+
+.menu a{
+  position:relative;
+}
+
+.menu a:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-7px;
+  width:0;
+  height:2px;
+  background:var(--accent);
+  transition:.25s ease;
+}
+
+.menu a:hover:after{
+  width:100%;
+}
+
+.nav-contact{
+  padding:11px 17px;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:999px;
+  font-size:13px;
+  font-weight:700;
+}
+
+/* -------------------------------------------------
+   HERO
+-------------------------------------------------- */
+
+.hero{
+  min-height:100svh;
+  position:relative;
+  color:white;
+  background:var(--dark);
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+
+.hero-photo{
+  position:absolute;
+  inset:0 0 0 37%;
+  overflow:hidden;
+}
+
+.hero-photo img{
+  transform:scale(1.06);
+  filter:saturate(.78) contrast(1.06);
+  will-change:transform;
+}
+
+.hero-photo:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,
+      var(--dark) 0%,
+      rgba(16,19,16,.95) 10%,
+      rgba(16,19,16,.65) 33%,
+      rgba(16,19,16,.16) 72%,
+      rgba(16,19,16,.12) 100%),
+    linear-gradient(0deg,
+      rgba(16,19,16,.45),
+      transparent 60%);
+}
+
+.hero-content{
+  position:relative;
+  z-index:4;
+  width:min(840px,65vw);
+  padding:160px 0 95px;
+}
+
+.eyebrow{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  margin-bottom:25px;
+  color:#bec3be;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-weight:800;
+}
+
+.eyebrow:before{
+  content:"";
+  width:38px;
+  height:3px;
+  background:var(--accent);
+}
+
+h1{
+  max-width:900px;
+  margin:0 0 30px;
+  font-size:clamp(63px,8vw,118px);
+  line-height:.95;
+  letter-spacing:-.012em;
+  font-weight:900;
+}
+
+.hero-lead{
+  max-width:670px;
+  margin:0;
+  color:#c6cbc7;
+  font-size:clamp(17px,1.3vw,20px);
+  line-height:1.65;
+  font-weight:400;
+}
+
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:11px;
+  margin-top:34px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:15px 21px;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:999px;
+  font-size:13px;
+  font-weight:700;
+  transition:.25s ease;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn.primary{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:#111;
+}
+
+.hero-stats{
+  position:absolute;
+  z-index:5;
+  right:34px;
+  bottom:34px;
+  display:flex;
+  gap:1px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.12);
+}
+
+.hero-scroll{
+  position:absolute;
+  z-index:6;
+  left:50%;
+  bottom:36px;
+  transform:translateX(-50%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:9px;
+  color:#dfe3df;
+  text-decoration:none;
+  transition:opacity .25s ease, transform .25s ease;
+  will-change:opacity;
+}
+
+.hero-scroll:hover{
+  color:#ffffff;
+  transform:translateX(-50%) translateY(-2px);
+}
+
+.scroll-mouse{
+  position:relative;
+  width:28px;
+  height:46px;
+  border:2px solid rgba(255,255,255,.8);
+  border-radius:18px;
+  background:rgba(255,255,255,.04);
+  backdrop-filter:blur(8px);
+}
+
+.scroll-mouse:before{
+  content:"";
+  position:absolute;
+  top:8px;
+  left:50%;
+  width:4px;
+  height:9px;
+  border-radius:999px;
+  background:#fff;
+  transform:translateX(-50%);
+  animation:scrollWheel 1.7s ease-in-out infinite;
+}
+
+.scroll-chevron{
+  position:relative;
+  display:block;
+  width:16px;
+  height:12px;
+  opacity:.65;
+  animation:scrollChevron 1.7s ease-in-out infinite;
+}
+
+.scroll-chevron:before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:8px;
+  height:8px;
+  border-right:2px solid rgba(255,255,255,.85);
+  border-bottom:2px solid rgba(255,255,255,.85);
+  transform:translateX(-50%) rotate(45deg);
+  transform-origin:center;
+}
+
+@keyframes scrollWheel{
+  0%{ opacity:0; transform:translateX(-50%) translateY(0); }
+  25%{ opacity:1; }
+  70%{ opacity:1; transform:translateX(-50%) translateY(12px); }
+  100%{ opacity:0; transform:translateX(-50%) translateY(14px); }
+}
+
+@keyframes scrollChevron{
+  0%,100%{ opacity:.35; transform:translateY(0); }
+  50%{ opacity:1; transform:translateY(4px); }
+}
+
+.hero-stat{
+  min-width:155px;
+  padding:20px 24px;
+  background:rgba(12,15,12,.72);
+  backdrop-filter:blur(12px);
+}
+
+.hero-stat strong{
+  display:block;
+  margin-top:8px;
+  font-size:26px;
+  line-height:1;
+  letter-spacing:0;
+  font-weight:900;
+}
+
+.hero-stat span{
+  display:block;
+  color:#9ca39d;
+  font-size:10px;
+  line-height:1.3;
+  text-transform:uppercase;
+  letter-spacing:.13em;
+  font-weight:700;
+}
+
+/* -------------------------------------------------
+   TICKER
+-------------------------------------------------- */
+
+.ticker{
+  background:var(--accent);
+  overflow:hidden;
+  padding:15px 0;
+}
+
+.ticker-track{
+  display:flex;
+  width:max-content;
+  white-space:nowrap;
+  animation:ticker 30s linear infinite;
+  will-change:transform;
+  font-size:11px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.13em;
+}
+
+.ticker-group{
+  display:flex;
+  flex-shrink:0;
+  align-items:center;
+  gap:30px;
+  padding-right:30px;
+}
+
+@keyframes ticker{
+  from{ transform:translate3d(0,0,0); }
+  to{ transform:translate3d(-50%,0,0); }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .ticker-track{ animation-play-state:paused; }
+}
+
+/* -------------------------------------------------
+   COMMON
+-------------------------------------------------- */
+
+section{
+  padding:118px 0;
+}
+
+.section-head{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  align-items:end;
+  gap:80px;
+  margin-bottom:64px;
+}
+
+.kicker{
+  color:#7d827c;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-weight:800;
+}
+
+h2{
+  max-width:850px;
+  margin:10px 0 0;
+  font-size:clamp(44px,5.3vw,76px);
+  line-height:1.01;
+  letter-spacing:-.008em;
+  font-weight:900;
+}
+
+.section-lead{
+  max-width:540px;
+  margin:0;
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.72;
+}
+
+.reveal{
+  opacity:0;
+  transform:translateY(36px);
+  transition:
+    opacity .8s cubic-bezier(.2,.65,.2,1),
+    transform .8s cubic-bezier(.2,.65,.2,1);
+}
+
+.reveal.visible{
+  opacity:1;
+  transform:none;
+}
+
+.delay-1{ transition-delay:.08s; }
+.delay-2{ transition-delay:.16s; }
+.delay-3{ transition-delay:.24s; }
+
+/* -------------------------------------------------
+   SERVICE
+-------------------------------------------------- */
+
+.services{
+  background:var(--paper);
+}
+
+.service-layout{
+  display:grid;
+  grid-template-columns:.88fr 1.12fr;
+  gap:58px;
+  align-items:start;
+}
+
+.service-list{
+  padding-bottom:14vh;
+}
+
+.service-item{
+  min-height:48vh;
+  display:grid;
+  grid-template-columns:58px 1fr;
+  gap:18px;
+  padding:33px 0 58px;
+  border-top:1px solid var(--line);
+  opacity:.35;
+  transition:.35s ease;
+}
+
+.service-item.active{
+  opacity:1;
+}
+
+.service-number{
+  width:40px;
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top:4px;
+  background:var(--accent);
+  color:#111;
+  border-radius:4px;
+  font-size:11px;
+  line-height:1;
+  letter-spacing:.12em;
+  font-weight:900;
+  box-shadow:0 1px 0 rgba(0,0,0,.08);
+}
+
+.service-item h3{
+  margin:0 0 16px;
+  font-size:clamp(31px,3.4vw,49px);
+  line-height:1.08;
+  letter-spacing:-.004em;
+  font-weight:900;
+}
+
+.service-item p{
+  max-width:600px;
+  margin:0;
+  color:var(--muted);
+  font-size:16.5px;
+  line-height:1.73;
+}
+
+
+.service-visual{
+  position:sticky;
+  top:95px;
+  height:calc(100vh - 122px);
+  min-height:580px;
+  background:#dad6cb;
+  overflow:hidden;
+}
+
+.service-photo{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  transform:scale(1.035);
+  transition:
+    opacity .5s ease,
+    transform 1s cubic-bezier(.2,.65,.2,1);
+}
+
+.service-photo.active{
+  opacity:1;
+  transform:scale(1);
+}
+
+.service-photo:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    0deg,
+    rgba(10,12,10,.48) 0%,
+    transparent 42%
+  );
+}
+
+.visual-label{
+  position:absolute;
+  z-index:4;
+  left:25px;
+  bottom:24px;
+  padding:10px 13px;
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(14,17,14,.72);
+  backdrop-filter:blur(12px);
+  color:#fff;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-weight:800;
+}
+
+/* -------------------------------------------------
+   DARK FEATURE
+-------------------------------------------------- */
+
+.feature-section{
+  background:var(--dark);
+  color:white;
+}
+
+.feature-section .kicker{
+  color:#7f877f;
+}
+
+.feature-section .section-lead{
+  color:#aeb4af;
+}
+
+.feature-grid{
+  display:grid;
+  grid-template-columns:1.18fr .82fr;
+  gap:18px;
+}
+
+.feature-main,
+.feature-card{
+  position:relative;
+  overflow:hidden;
+  background:var(--dark-2);
+}
+
+.feature-main{
+  min-height:590px;
+}
+
+.feature-stack{
+  display:grid;
+  gap:18px;
+}
+
+.feature-card{
+  min-height:286px;
+}
+
+.feature-main img,
+.feature-card img{
+  position:absolute;
+  inset:0;
+  filter:saturate(.8);
+  transition:transform 1s cubic-bezier(.2,.65,.2,1);
+}
+
+.feature-main:hover img,
+.feature-card:hover img{
+  transform:scale(1.04);
+}
+
+.feature-main:after,
+.feature-card:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    180deg,
+    transparent 34%,
+    rgba(10,12,10,.9) 100%
+  );
+}
+
+.feature-copy{
+  position:absolute;
+  z-index:3;
+  left:34px;
+  right:34px;
+  bottom:33px;
+}
+
+.feature-copy h3{
+  margin:0 0 12px;
+  font-size:clamp(31px,3vw,44px);
+  line-height:1.06;
+  letter-spacing:-.004em;
+  font-weight:900;
+}
+
+.feature-card .feature-copy h3{
+  font-size:28px;
+}
+
+.feature-copy p{
+  max-width:610px;
+  margin:0;
+  color:#c5cac6;
+  font-size:15.5px;
+  line-height:1.65;
+}
+
+/* -------------------------------------------------
+   TRUST / STORY
+-------------------------------------------------- */
+
+.story{
+  position:relative;
+  background:#f7f5ef;
+  overflow:hidden;
+}
+
+.story-bg-number{
+  position:absolute;
+  top:38px;
+  right:-2vw;
+  color:rgba(18,21,18,.035);
+  font-size:24vw;
+  line-height:.8;
+  letter-spacing:-.06em;
+  font-weight:800;
+  user-select:none;
+}
+
+.story-grid{
+  position:relative;
+  display:grid;
+  grid-template-columns:.78fr 1.22fr;
+  gap:105px;
+}
+
+.story-year{
+  position:sticky;
+  top:150px;
+  height:max-content;
+  color:#d0ccc2;
+  font-size:clamp(94px,13vw,185px);
+  line-height:.85;
+  letter-spacing:-.035em;
+  font-weight:700;
+}
+
+.story-copy p{
+  max-width:740px;
+  color:#606660;
+  font-size:17.5px;
+  line-height:1.78;
+}
+
+.story-copy .statement{
+  margin:34px 0 0;
+  padding-left:22px;
+  border-left:3px solid var(--accent);
+  color:#1e221e;
+  font-size:20px;
+  line-height:1.6;
+  font-weight:600;
+}
+
+.timeline{
+  margin-top:52px;
+  border-top:1px solid var(--line);
+}
+
+.timeline-row{
+  display:grid;
+  grid-template-columns:115px 1fr;
+  gap:28px;
+  padding:23px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.timeline-row strong{
+  font-size:13px;
+  font-weight:800;
+}
+
+.timeline-row span{
+  color:var(--muted);
+}
+
+/* -------------------------------------------------
+   DEALERS
+-------------------------------------------------- */
+
+.dealers{
+  background:var(--bg);
+}
+
+.brand-grid{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:1px;
+  margin-top:48px;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+
+.brand-tile{
+  min-height:132px;
+  display:grid;
+  place-items:center;
+  padding:20px;
+  background:#faf8f3;
+  text-align:center;
+  font-size:21px;
+  letter-spacing:-.015em;
+  font-weight:700;
+  transition:.25s ease;
+  position:relative;
+}
+
+.brand-tile:after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:34px;
+  width:58px;
+  height:3px;
+  background:var(--accent);
+  transform:translateX(-50%);
+  border-radius:999px;
+  opacity:.95;
+}
+
+.brand-tile:hover{
+  background:white;
+  transform:translateY(-3px);
+  z-index:2;
+}
+
+/* -------------------------------------------------
+   SECONDARY SERVICES
+-------------------------------------------------- */
+
+.secondary{
+  padding-top:0;
+}
+
+.secondary-box{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:1px;
+  border:1px solid var(--line);
+  background:var(--line);
+}
+
+.secondary-item{
+  padding:31px;
+  background:#eae7df;
+}
+
+.secondary-item h3{
+  margin:0 0 8px;
+  font-size:21px;
+  line-height:1.2;
+  letter-spacing:-.01em;
+  font-weight:700;
+}
+
+.secondary-item p{
+  margin:0;
+  color:#737872;
+  font-size:14.5px;
+  line-height:1.65;
+}
+
+/* -------------------------------------------------
+   CONTACT
+-------------------------------------------------- */
+
+.contact{
+  position:relative;
+  background:var(--accent);
+  overflow:hidden;
+  padding:96px 0 82px;
+}
+
+.contact-head{
+  position:relative;
+  z-index:2;
+  display:block;
+}
+
+.contact h2{
+  max-width:950px;
+}
+
+.contact-layout{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:.92fr 1.08fr;
+  gap:24px;
+  margin-top:59px;
+  align-items:stretch;
+}
+
+.location{
+  padding:31px;
+  background:var(--accent-light);
+  min-height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.location .kicker{
+  color:#674a0b;
+}
+
+.location h3{
+  margin:7px 0 10px;
+  font-size:28px;
+  line-height:1.15;
+  letter-spacing:-.015em;
+  font-weight:700;
+}
+
+.location p{
+  margin:0;
+}
+
+.location-actions{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:11px;
+  margin-top:24px;
+}
+
+.location .btn{
+  margin:0;
+  align-self:auto;
+  background:#111;
+  border-color:#111;
+  color:white;
+  border-bottom:0;
+  white-space:nowrap;
+}
+
+.map-card{
+  overflow:hidden;
+  min-height:340px;
+  background:#dcb34c;
+}
+
+.map-card iframe{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:340px;
+  border:0;
+}
+
+/* -------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+
+footer{
+  padding:53px 0 24px;
+  background:#0d100d;
+  color:white;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.3fr .8fr .8fr .8fr;
+  gap:42px;
+}
+
+footer h4{
+  margin:5px 0 15px;
+  color:#777e78;
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-weight:800;
+}
+
+footer p,
+footer a{
+  color:#b5bab5;
+  font-size:13px;
+  line-height:1.7;
+}
+
+.footer-fine{
+  display:flex;
+  justify-content:space-between;
+  margin-top:45px;
+  padding-top:20px;
+  border-top:1px solid #272b27;
+  color:#737a74;
+  font-size:11px;
+}
+
+/* -------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+
+@media(max-width:1020px){
+  .menu{display:none}
+
+  .hero-photo{
+    left:28%;
+  }
+
+  .hero-content{
+    width:76vw;
+  }
+
+  .hero-stats{
+    display:none;
+  }
+
+  .section-head,
+  .service-layout,
+  .story-grid{
+    grid-template-columns:1fr;
+  }
+
+  .section-head{
+    gap:28px;
+  }
+
+  .service-list{
+    padding-bottom:0;
+  }
+
+  .service-item{
+    min-height:auto;
+    opacity:1;
+  }
+
+  .service-visual{
+    position:relative;
+    top:auto;
+    order:-1;
+    height:62vw;
+    min-height:450px;
+  }
+
+  .feature-grid{
+    grid-template-columns:1fr;
+  }
+
+  .feature-stack{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .story-grid{
+    gap:42px;
+  }
+
+  .story-year{
+    position:relative;
+    top:auto;
+  }
+
+  .brand-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .secondary-box{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1.2fr 1fr 1fr;
+  }
+}
+
+@media(max-width:650px){
+  .wrap{
+    width:min(var(--max), calc(100% - 28px));
+  }
+
+  .logo img{
+    height:52px;
+    max-width:215px;
+  }
+
+  .nav{
+    padding:18px 0;
+  }
+
+  .nav-contact{
+    display:none;
+  }
+
+  .hero{
+    min-height:830px;
+    align-items:flex-end;
+  }
+
+  .hero-scroll{
+    bottom:20px;
+  }
+
+  .hero-photo{
+    left:0;
+    opacity:.5;
+  }
+
+  .hero-content{
+    width:100%;
+    padding:170px 0 70px;
+  }
+
+  h1{
+    font-size:58px;
+    line-height:.98;
+  }
+
+  section{
+    padding:80px 0;
+  }
+
+  h2{
+    font-size:43px;
+  }
+
+  .service-item{
+    grid-template-columns:42px 1fr;
+  }
+
+  .service-visual{
+    height:87vw;
+    min-height:350px;
+  }
+
+  .feature-main{
+    min-height:450px;
+  }
+
+  .feature-stack{
+    grid-template-columns:1fr;
+  }
+
+  .feature-card{
+    min-height:320px;
+  }
+
+  .story-year{
+    font-size:105px;
+  }
+
+  .brand-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .brand-tile{
+    min-height:105px;
+    font-size:17px;
+  }
+
+  .contact-layout{
+    grid-template-columns:1fr;
+  }
+
+  .map-card,
+  .map-card iframe{
+    min-height:300px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .footer-fine{
+    display:block;
+  }
+}
+</style>
+</head>
+
+<body>
+<!--
+IMAGE ASSETS
+Replace any JPG in /assets with your own image using the same filename.
+The layout uses object-fit: cover, so exact dimensions are not critical.
+Recommended: landscape images around 1800 × 1200 px or larger.
+-->
+
+<div class="progress">
+  <span id="progressBar"></span>
+</div>
+
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top" aria-label="Skovgaard Maskinservice">
+      <img src="assets/logo.svg" alt="Skovgaard Maskinservice" width="190" height="54" decoding="async">
+    </a>
+
+    <div class="menu">
+      <a href="#service">Service & reparation</a>
+      <a href="#historie">Om Skovgaard Maskinservice</a>
+      <a href="#forhandling">Forhandling</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+
+    <a class="nav-contact" href="tel:+4575560260">75 56 02 60</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+
+  <div class="hero-photo">
+    <img
+      id="heroImg"
+      src="assets/hero-workshop.jpg"
+      alt="Maskinservice og reparation hos Skovgaard Maskinservice i Bogense"
+      width="2400" height="1500"
+      fetchpriority="high"
+      decoding="async">
+  </div>
+
+  <div class="wrap">
+    <div class="hero-content">
+
+      <div class="eyebrow reveal">
+        Skovgaard Maskinservice A/S
+      </div>
+
+      <h1 class="reveal delay-1">
+        Vi holder maskinerne kørende.
+      </h1>
+
+      <p class="hero-lead reveal delay-2">
+        Service og reparation af landbrugs-, entreprenør-, have- og skovmaskiner
+        samt lifte og trucks — fra værkstedet i Bogense eller direkte hos dig.
+      </p>
+
+      <div class="hero-actions reveal delay-3">
+        <a class="btn primary" href="#service">
+          Se vores serviceområder <span>↓</span>
+        </a>
+
+        <a class="btn" href="tel:+4575560260">
+          Ring 75 56 02 60
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span>Rødder tilbage til</span>
+      <strong>1976</strong>
+    </div>
+
+    <div class="hero-stat">
+      <span>Servicevogne</span>
+      <strong>2</strong>
+    </div>
+  </div>
+
+  <a class="hero-scroll" href="#service" aria-label="Scroll til næste sektion">
+    <span class="scroll-mouse" aria-hidden="true"></span>
+    <span class="scroll-chevron" aria-hidden="true"></span>
+  </a>
+
+</header>
+
+<div class="ticker" aria-label="Skovgaard Maskinservice serviceområder">
+  <div class="ticker-track">
+    <div class="ticker-group">
+      <span>Landbrug</span><span>•</span>
+      <span>Skov</span><span>•</span>
+      <span>Entreprenør</span><span>•</span>
+      <span>Have & park</span><span>•</span>
+      <span>Lifte</span><span>•</span>
+      <span>Trucks</span><span>•</span>
+      <span>Hydraulik</span><span>•</span>
+      <span>Landbrug</span><span>•</span>
+      <span>Skov</span><span>•</span>
+      <span>Entreprenør</span><span>•</span>
+      <span>Have & park</span><span>•</span>
+      <span>Lifte</span><span>•</span>
+      <span>Trucks</span><span>•</span>
+      <span>Hydraulik</span><span>•</span>
+    </div>
+    <div class="ticker-group" aria-hidden="true">
+      <span>Landbrug</span><span>•</span>
+      <span>Skov</span><span>•</span>
+      <span>Entreprenør</span><span>•</span>
+      <span>Have & park</span><span>•</span>
+      <span>Lifte</span><span>•</span>
+      <span>Trucks</span><span>•</span>
+      <span>Hydraulik</span><span>•</span>
+      <span>Landbrug</span><span>•</span>
+      <span>Skov</span><span>•</span>
+      <span>Entreprenør</span><span>•</span>
+      <span>Have & park</span><span>•</span>
+      <span>Lifte</span><span>•</span>
+      <span>Trucks</span><span>•</span>
+      <span>Hydraulik</span><span>•</span>
+    </div>
+  </div>
+</div>
+
+<section class="services" id="service">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div class="reveal">
+        <div class="kicker">Service & reparation</div>
+        <h2>
+          Erfaring på tværs af maskintyper.
+        </h2>
+      </div>
+
+      <p class="section-lead reveal delay-1">
+        Skovgaard Maskinservice i Bogense servicerer og reparerer maskiner efter producentens
+        anvisninger og arbejder både fra værkstedet og ude hos kunden fra servicevognene.
+      </p>
+    </div>
+
+    <div class="service-layout">
+
+      <div class="service-list">
+
+        <article class="service-item active"
+          data-index="0"
+          data-label="Landbrug & skov">
+
+          <div class="service-number">01</div>
+
+          <div>
+            <h3>Landbrug & skov</h3>
+
+            <p>
+              Service og reparation af alle mærker og modeller inden for landbrugs-
+              og skovmaskiner. Skovgaard Maskinservice håndterer både mekanik, motor,
+              hydraulik, dæk og smedearbejde — fra løbende service og fejlfinding til
+              større reparationer på værkstedet eller ude hos dig.
+            </p>
+          </div>
+
+        </article>
+
+        <article class="service-item"
+          data-index="1"
+          data-label="Entreprenør">
+
+          <div class="service-number">02</div>
+
+          <div>
+            <h3>Entreprenør</h3>
+
+            <p>
+              Service og reparation af entreprenørmateriel på tværs af mærker og
+              modeller. Skovgaard Maskinservice har adgang til reservedele og udfører arbejdet efter
+              producentens anvisninger.
+            </p>
+          </div>
+
+        </article>
+
+        <article class="service-item"
+          data-index="2"
+          data-label="Have & park">
+
+          <div class="service-number">03</div>
+
+          <div>
+            <h3>Have & park</h3>
+
+            <p>
+              Service og reparation af havemaskiner. Med servicevogne og trailere
+              kan Skovgaard Maskinservice hente og levere maskiner — eller reparere direkte hos kunden.
+            </p>
+          </div>
+
+        </article>
+
+        <article class="service-item"
+          data-index="3"
+          data-label="Lifte & trucks">
+
+          <div class="service-number">04</div>
+
+          <div>
+            <h3>Lifte & trucks</h3>
+
+            <p>
+              Skovgaard Maskinservice servicerer og reparerer lifte, trucks og teleskoplæssere —
+              fra løbende vedligehold og fejlfinding til større reparationer.
+              Opgaverne løses på værkstedet eller ude hos kunden alt efter maskinen og behovet.
+            </p>
+          </div>
+
+        </article>
+
+      </div>
+
+      <div class="service-visual reveal">
+
+        <div class="service-photo active">
+          <img
+            src="assets/service-landbrug.jpg"
+            alt="Service og reparation af landbrugs- og skovmaskiner"
+            width="1400" height="1800"
+            loading="lazy" decoding="async">
+        </div>
+
+        <div class="service-photo">
+          <img
+            src="assets/service-entreprenoer.jpg"
+            alt="Service og reparation af entreprenørmaskiner"
+            width="1400" height="1800"
+            loading="lazy" decoding="async">
+        </div>
+
+        <div class="service-photo">
+          <img
+            src="assets/service-have-park.jpg"
+            alt="Service og reparation af have- og parkmaskiner"
+            width="1400" height="1800"
+            loading="lazy" decoding="async">
+        </div>
+
+        <div class="service-photo">
+          <img
+            src="assets/service-lifte-trucks.jpg"
+            alt="Service og reparation af lifte, trucks og teleskoplæssere"
+            width="1400" height="1800"
+            loading="lazy" decoding="async">
+        </div>
+
+        <div class="visual-label" id="visualLabel">
+          Landbrug & skov
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="feature-section">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div class="reveal">
+        <div class="kicker">Værksted & mobil service</div>
+        <h2>
+          Reparation dér, hvor det giver mening.
+        </h2>
+      </div>
+
+      <p class="section-lead reveal delay-1">
+        Nogle maskiner kommer på værkstedet. Andre repareres bedst på stedet.
+        Derfor arbejder Skovgaard Maskinservice både fra værkstedet og fra virksomhedens servicevogne.
+      </p>
+    </div>
+
+    <div class="feature-grid">
+
+      <div class="feature-main reveal">
+        <img
+          src="assets/workshop-service.jpg"
+          alt="Maskinreparation på værksted hos Skovgaard Maskinservice"
+          width="1800" height="1300"
+          loading="lazy" decoding="async">
+
+        <div class="feature-copy">
+          <h3>Værksted eller servicevogn.</h3>
+          <p>
+            Vi tager værkstedet med ud til dig, når det giver bedst mening —
+            så du undgår unødig transport og får maskinen hurtigere tilbage i drift.
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-stack">
+
+        <div class="feature-card reveal delay-1">
+          <img
+            src="assets/hydraulik.jpg"
+            alt="Fremstilling og service af hydraulikslanger"
+            width="1400" height="950"
+            loading="lazy" decoding="async">
+
+          <div class="feature-copy">
+            <h3>Hydraulikslanger</h3>
+            <p>
+              Skovgaard Maskinservice kan presse hydraulikslanger på mål og montere
+              præcis de fittings, der skal til — så løsningen passer til maskinen og opgaven.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-card reveal delay-2">
+          <img
+            src="assets/specialopgaver.jpg"
+            alt="Trailerreparation og praktiske specialopgaver"
+            width="1400" height="950"
+            loading="lazy" decoding="async">
+
+          <div class="feature-copy">
+            <h3>Praktiske specialopgaver</h3>
+            <p>
+              Trailerreparationer og øvrige specialopgaver er en del af de ekstra opgaver,
+              Skovgaard Maskinservice også kan hjælpe med.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="story" id="historie">
+
+  <div class="story-bg-number">1976</div>
+
+  <div class="wrap story-grid">
+
+    <div class="story-year reveal">
+      1976
+    </div>
+
+    <div class="story-copy">
+
+      <div class="kicker reveal">Om Skovgaard Maskinservice</div>
+
+      <h2 class="reveal delay-1">
+        Nyt navn.<br>
+        Mange års erfaring.
+      </h2>
+
+      <p class="reveal">
+        Skovgaard Maskinservice A/S bygger videre på Ole's Traktor og Landbrugsservice,
+        som blev startet i 1976. Mark Skovgaard Larsen overtog virksomheden i oktober 2017
+        og ændrede navnet til Skovgaard Maskinservice A/S.
+      </p>
+
+      <p class="reveal">
+        Mark er uddannet landbrugs- og maskinmekaniker fra Kragmann i Middelfart og har
+        siden arbejdet med entreprenørmaskiner og lifte hos blandt andre Riwal og
+        J. Franks Liftservice.
+      </p>
+
+      <p class="statement reveal">
+        Det giver Skovgaard Maskinservice en bred teknisk erfaring — fra landbrug og entreprenørmaskiner
+        til lifte, trucks og teleskoplæssere.
+      </p>
+
+      <div class="timeline reveal">
+
+        <div class="timeline-row">
+          <strong>1976</strong>
+          <span>Ole's Traktor og Landbrugsservice etableres.</span>
+        </div>
+
+        <div class="timeline-row">
+          <strong>2017</strong>
+          <span>Mark Skovgaard Larsen overtager virksomheden og navnet bliver Skovgaard Maskinservice A/S.</span>
+        </div>
+
+        <div class="timeline-row">
+          <strong>I dag</strong>
+          <span>J. Franks Liftservice er kommet under Skovgaard Maskinservice-koncernen og udvider kompetencerne inden for blandt andet lifte og relateret materiel.</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="dealers" id="forhandling">
+  <div class="wrap">
+
+    <div class="section-head">
+      <div class="reveal">
+        <div class="kicker">Forhandling</div>
+
+        <h2>
+          Forhandler af<br>
+          udvalgte mærker
+        </h2>
+      </div>
+
+      <p class="section-lead reveal delay-1">
+        Skovgaard Maskinservice forhandler Landini samt Toro, Hustler, Stiga og Echo.
+        Derudover forhandles Aspen miljøbenzin og diesel.
+      </p>
+    </div>
+
+    <div class="brand-grid reveal">
+      <div class="brand-tile">LANDINI</div>
+      <div class="brand-tile">TORO</div>
+      <div class="brand-tile">HUSTLER</div>
+      <div class="brand-tile">STIGA</div>
+      <div class="brand-tile">ECHO</div>
+      <div class="brand-tile">ASPEN</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="secondary">
+  <div class="wrap">
+
+    <div class="secondary-box reveal">
+
+      <div class="secondary-item">
+        <h3>Hydraulik</h3>
+        <p>Fremstilling af hydraulikslanger i forbindelse med service og reparation.</p>
+      </div>
+
+      <div class="secondary-item">
+        <h3>Dæk</h3>
+        <p>Skovgaard Maskinservice udfører også lapning af dæk på blandt andet landbrugs- og entreprenørmateriel.</p>
+      </div>
+
+      <div class="secondary-item">
+        <h3>Øvrige opgaver</h3>
+        <p>Trailerreparationer, almene smedeopgaver og andre praktiske specialopgaver efter behov.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="kontakt">
+  <div class="wrap">
+
+    <div class="contact-head">
+
+      <div>
+        <div class="kicker" style="color:#60460c;">
+          Kontakt Skovgaard Maskinservice
+        </div>
+
+        <h2>
+          Har du en maskine,<br>
+          der skal tilbage i arbejde?
+        </h2>
+      </div>
+
+    </div>
+
+    <div class="contact-layout">
+
+      <div class="location">
+        <div class="kicker">Bogense</div>
+        <h3>Sandholtvej 17</h3>
+        <p>
+          Kærby<br>
+          5400 Bogense
+        </p>
+
+        <div class="location-actions">
+          <a href="tel:+4575560260" class="btn">
+            75 56 02 60
+          </a>
+
+          <a href="mailto:mail@sgms.dk" class="btn">
+            mail@sgms.dk ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="map-card" aria-label="Kort over Skovgaard Maskinservice i Bogense">
+        <iframe
+          title="Kort over Sandholtvej 17, 5400 Bogense"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Sandholtvej+17,+5400+Bogense,+Denmark&z=13&output=embed">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+
+    <div class="footer-grid">
+
+      <div>
+        <div class="logo">
+          <img src="assets/logo.svg" alt="Skovgaard Maskinservice" width="190" height="54" decoding="async">
+        </div>
+
+        <p>
+          Skovgaard Maskinservice A/S<br>
+          Service og reparation af maskiner.
+        </p>
+      </div>
+
+      <div>
+        <h4>Service</h4>
+        <p>Landbrug & skov</p>
+        <p>Entreprenør</p>
+        <p>Have & park</p>
+        <p>Lifte & trucks</p>
+      </div>
+
+      <div>
+        <h4>Kontakt</h4>
+        <p><a href="tel:+4575560260">75 56 02 60</a></p>
+        <p><a href="mailto:mail@sgms.dk">mail@sgms.dk</a></p>
+        <p>CVR 38824465</p>
+      </div>
+
+      <div>
+        <h4>Afdeling</h4>
+        <p>Bogense</p>
+      </div>
+
+    </div>
+
+    <div class="footer-fine">
+      <span>© 2026 Skovgaard Maskinservice A/S</span>
+      <span>Skovgaard Maskinservice</span>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+const nav = document.getElementById("nav");
+const progressBar = document.getElementById("progressBar");
+const heroImg = document.getElementById("heroImg");
+const heroScroll = document.querySelector(".hero-scroll");
+
+function handleScroll(){
+  const scrollY = window.scrollY;
+
+  nav.classList.toggle("scrolled", scrollY > 45);
+
+  const maxScroll =
+    document.documentElement.scrollHeight - window.innerHeight;
+
+  progressBar.style.width =
+    Math.min((scrollY / maxScroll) * 100, 100) + "%";
+
+  heroImg.style.transform =
+    `scale(1.06) translateY(${Math.min(scrollY * 0.055, 58)}px)`;
+
+  if(heroScroll){
+    const fadeEnd = Math.max(window.innerHeight * 0.28, 160);
+    const opacity = Math.max(0, 1 - (scrollY / fadeEnd));
+    heroScroll.style.opacity = opacity.toFixed(3);
+    heroScroll.style.pointerEvents = opacity < 0.08 ? "none" : "auto";
+  }
+}
+
+window.addEventListener("scroll", handleScroll, { passive:true });
+handleScroll();
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+},{
+  threshold:.12
+});
+
+document.querySelectorAll(".reveal")
+  .forEach(el => revealObserver.observe(el));
+
+const services =
+  [...document.querySelectorAll(".service-item")];
+
+const photos =
+  [...document.querySelectorAll(".service-photo")];
+
+const label =
+  document.getElementById("visualLabel");
+
+let activeServiceIndex = -1;
+let serviceTicking = false;
+
+function setActiveService(index){
+  if(index === activeServiceIndex || !services[index] || !photos[index]) return;
+
+  activeServiceIndex = index;
+
+  services.forEach((item, i) =>
+    item.classList.toggle("active", i === index)
+  );
+
+  photos.forEach((photo, i) =>
+    photo.classList.toggle("active", i === index)
+  );
+
+  label.textContent = services[index].dataset.label;
+}
+
+function updateActiveService(){
+  if(!services.length) return;
+
+  // The active item is the last service heading that has crossed this
+  // fixed point in the viewport. Because it is calculated from the
+  // current geometry on every update, it behaves the same going up
+  // as it does going down.
+  const activationLine = window.innerHeight * 0.46;
+  let index = 0;
+
+  services.forEach((service, i) => {
+    const rect = service.getBoundingClientRect();
+    if(rect.top <= activationLine){
+      index = i;
+    }
+  });
+
+  setActiveService(index);
+}
+
+function requestServiceUpdate(){
+  if(serviceTicking) return;
+
+  serviceTicking = true;
+  requestAnimationFrame(() => {
+    updateActiveService();
+    serviceTicking = false;
+  });
+}
+
+window.addEventListener("scroll", requestServiceUpdate, { passive:true });
+window.addEventListener("resize", requestServiceUpdate);
+requestServiceUpdate();
+</script>
+
+</body>
+</html>
